@@ -20,11 +20,11 @@ function myRevert(myArr : Array <any>){
     return rArr ;
 }
 
-function add(myWords){
+export function add(myWords : Array <any>){
     let i : number = 0;
-    let total=0
+    let total : number = 0
     for(i = 0; i < myWords.length; i++){
-        total+= myWords[i]
+        total+= myWords[i].length
     }
   return total;
 }

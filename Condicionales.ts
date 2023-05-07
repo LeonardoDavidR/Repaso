@@ -73,7 +73,7 @@ function continent(country : string){
     
 }
 
-function isEven(number : number){
+export function isEven(number : number){
     let even : string = ""
     if( number%2 == 0 ){
         even = "Es par"
@@ -84,3 +84,5 @@ function isEven(number : number){
     return even;
 
 }
+
+
