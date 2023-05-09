@@ -1,4 +1,4 @@
-function hasEven(myNums : Array<any>){
+function hasEven(myNums : number[]){
     let i : number = 0
     
     while(i < myNums.length && myNums[i]% 2 != 0){
@@ -9,18 +9,17 @@ function hasEven(myNums : Array<any>){
     return condicicon
 }
 
-function startWithM(myNames :Array <string>){
+function startWithM(myNames :string[]){
     let i : number = 0
-    let sePuede :Boolean = true
-    let noSePuede : Boolean = false
-    while(i < myNames.length){
-      
-      if(myNames[i] == "M"){
-        console.log(sePuede)
-      }
-      else if(myNames[i] != "M"){
-        console.log(noSePuede)
-      }
+   
+    while(i < myNames.length && myNames[i].startsWith("M")){
+      i++
     }
+    let con = i < myNames.length;
+    return con
   
 }
+
+let nombres = ["Maria", "Carlos", "Matias"]
+startWithM(nombres);
+console.log(startWithM(nombres))
