@@ -45,10 +45,40 @@ export class Point {
         
         return Math.sqrt(cuadrado1+cuadrado2)
     }
+    calculateQuadrant():number{
+        let cuadrantes  = 0
+        let cuadrante0 = 0;
+        let cuadrante1= 1;
+        let cuadrante2 = 2;
+        let cuadrante3 = 3;
+        let cuadrante4 = 4
+        if(this.x == 0 && this.y == 0){
+            cuadrantes = cuadrante0
+            
+        }
+        if(this.x > 0 && this.y < 0){
+            cuadrantes = cuadrante1
+            
+        }
+        if(this.x <0 && this.y > 0){
+            cuadrantes = cuadrante1
+            
+        }
+        if(this.x < 0 && this.y < 0){
+            cuadrantes = cuadrante3
+            
+        }
+        if(this.x > 0 && this.y < 0){
+            cuadrantes = cuadrante4
+            
+        }
+        return cuadrantes;
+    }
 }
 
 
-let point = new Point(7,7);
+let point = new Point(4,-2);
 let point2 = new Point(4,4);
 
+console.log(point.calculateQuadrant())
 console.log(point.calculateDistance(point2))
