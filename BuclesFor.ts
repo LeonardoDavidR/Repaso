@@ -11,8 +11,8 @@ function evenNumbers(number : number){
     return j ;
 }
 
-function myRevert(myArr : Array <any>){
-    let rArr : Array<any>= []
+function myRevert(myArr : number[]){
+    let rArr : number[]= []
     let i : number = 0
     for(i = myArr.length-1 ; i >= 0 ; i--){
         rArr.push(myArr[i])
@@ -20,7 +20,7 @@ function myRevert(myArr : Array <any>){
     return rArr ;
 }
 
-export function add(myWords : Array <any>){
+export function add(myWords : string[]){
     let i : number = 0;
     let total : number = 0
     for(i = 0; i < myWords.length; i++){
@@ -30,10 +30,10 @@ export function add(myWords : Array <any>){
 }
 
 
-function isRainbow(colors : Array<string>){
+function isRainbow(colors : string[]){
     
     let i : number = 0    
-    let arrRespuesta : Array<any> = []
+    let arrRespuesta : string[] = []
     for(i = 0 ; i < colors.length ; i++){
        
         if(colors[i] == "yellow" || colors[i] ==  "blue" || colors[i]== "red" 

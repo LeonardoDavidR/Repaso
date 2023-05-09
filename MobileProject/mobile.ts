@@ -31,30 +31,22 @@ export class Mobile{
         return this.price
     }
     public setName(newName : string){
-        return newName;
+         newName;
     }
     public setTradeMark(newTradeMark : string){
-        return newTradeMark;
+         newTradeMark;
     }
     public setModel(newModel : string){
-        return newModel; 
+         newModel; 
     }
     public setColor(newColor : string){
-        return newColor; 
+         newColor; 
     }
     public setPrice(newPrice : number){
-        return newPrice;
+         newPrice;
     }
     public printAll(){
-        return `The characteristics of the mobile are : ${"\n"}name : ${this.name},${"\n"}trademark : ${this.trademark},${"\n"}model : ${this.model},${"\n"}color : ${this.color},${"\n"}price : ${this.price}`
+        console.log( `The characteristics of the mobile are : ${"\n"}name : ${this.name},${"\n"}trademark : ${this.trademark},${"\n"}model : ${this.model},${"\n"}color : ${this.color},${"\n"}price : ${this.price}`)
     }
-    // public myArrPrintAll(newArrMob : Array<any>) : Mobile[]{
-    //     let i : number = 0
-    //     let myArrMob : Array<any>= [];
-    //     for(i = 0 ; i< newArrMob.length; i++){
-            
-    //         myArrMob.push(newArrMob[i].printAll())
-    //     }
-    //     return myArrMob; 
-    // }
+   
 }

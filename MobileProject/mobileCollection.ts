@@ -8,20 +8,20 @@ export class MobileCollection{
         this.mobiles = mobiles
         this.totalPrice = this.totalPriceCalculation()
     }
-    public getMobiles(){
+    public getMobiles() : Mobile[]{
         return this.mobiles;
     }
-    public getTotalPrice(){
+    public getTotalPrice(): number{
         return this.totalPrice;
         
     }
-    public setMobiles(newMobArr : Array<Mobile>){
-        return this.mobiles = newMobArr;
+    public setMobiles(newMobArr : Mobile[]):void{
+         this.mobiles = newMobArr;
     }
-    public setTotalPrice(newTotalPrice : Array<Mobile>) {
-        return ;
+    public setTotalPrice(newTotalPrice : number):void {
+        this.totalPrice = newTotalPrice
     }
-    private totalPriceCalculation(){
+    private totalPriceCalculation() : number{
         let i : number = 0;
         let totalPr : number  = 0;
         for(i = 0 ; i < this.mobiles.length; i++){
